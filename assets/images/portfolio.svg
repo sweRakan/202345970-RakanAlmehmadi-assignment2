@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450"
+     viewBox="0 0 800 450">
+  <title>Personal portfolio webpage illustration</title>
+
+  <rect width="800" height="450" fill="#e2e8f0"/>
+
+  <rect x="90" y="55" width="620" height="340" rx="16" fill="#ffffff"/>
+  <path d="M106 55H694Q710 55 710 71V100H90V71Q90 55 106 55"
+        fill="#172033"/>
+
+  <circle cx="120" cy="78" r="7" fill="#f87171"/>
+  <circle cx="145" cy="78" r="7" fill="#fbbf24"/>
+  <circle cx="170" cy="78" r="7" fill="#4ade80"/>
+
+  <rect x="130" y="140" width="230" height="24" rx="6" fill="#1d4ed8"/>
+  <rect x="130" y="180" width="290" height="12" rx="6" fill="#94a3b8"/>
+  <rect x="130" y="205" width="255" height="12" rx="6" fill="#cbd5e1"/>
+  <rect x="130" y="240" width="120" height="35" rx="7" fill="#1d4ed8"/>
+
+  <rect x="495" y="130" width="155" height="145" rx="12" fill="#dbeafe"/>
+  <circle cx="572" cy="175" r="25" fill="#2563eb"/>
+  <path d="M529 245Q529 210 572 210Q615 210 615 245"
+        fill="#2563eb"/>
+
+  <rect x="130" y="310" width="160" height="50" rx="8" fill="#e8efff"/>
+  <rect x="320" y="310" width="160" height="50" rx="8" fill="#e8efff"/>
+  <rect x="510" y="310" width="140" height="50" rx="8" fill="#e8efff"/>
+</svg>

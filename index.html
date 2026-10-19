@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Rakan's software engineering portfolio, projects, and interests."
+    />
+
+    <title>Rakan | Software Engineering Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="#about" aria-label="Rakan home">
+          Rakan<span>.</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          hidden
+        >
+          Dark mode
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="about" aria-labelledby="about-title">
+        <div class="container hero-layout">
+          <div>
+            <p class="eyebrow">Software Engineering Student</p>
+            <h1 id="about-title">Hi, I'm <span>Rakan.</span></h1>
+
+            <p class="tagline">
+              Learning to build useful software for everyday problems.
+            </p>
+
+            <p class="intro">
+              I am a Software Engineering student at King Fahd University of
+              Petroleum and Minerals (KFUPM). I am developing my skills in web
+              development and enjoy exploring how software can improve everyday
+              experiences. This portfolio shares my projects and learning
+              progress.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button" href="#projects">Explore my projects</a>
+              <a class="button button-secondary" href="#contact">
+                Contact me
+              </a>
+            </div>
+          </div>
+
+          <aside class="learning-card" aria-labelledby="learning-title">
+            <p class="eyebrow">Currently learning</p>
+            <h2 id="learning-title">From ideas to working websites</h2>
+            <p>
+              Practicing HTML, CSS, and JavaScript to create accessible and
+              responsive web experiences.
+            </p>
+            <ul class="tags" aria-label="Current technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="section section-alt"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <p class="eyebrow">My work</p>
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-description">
+            A collection of projects and ideas from my learning journey.
+          </p>
+
+          <div class="project-controls" id="project-controls" hidden>
+            <div>
+              <label for="project-search">Search projects</label>
+              <input
+                id="project-search"
+                type="search"
+                maxlength="120"
+                placeholder="Try campus, HTML, or portfolio"
+                aria-controls="project-grid"
+              />
+            </div>
+            <div>
+              <label for="project-category">Project type</label>
+              <select id="project-category" aria-controls="project-grid">
+                <option value="all">All projects</option>
+                <option value="concept">Concepts</option>
+                <option value="website">Websites</option>
+              </select>
+            </div>
+            <button
+              class="button button-secondary"
+              id="reset-projects"
+              type="button"
+            >
+              Reset filters
+            </button>
+          </div>
+          <p id="storage-status" class="preference-note" role="status"></p>
+          <p
+            id="project-count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+          <div id="project-empty" class="empty-state" hidden>
+            <h3>No projects found</h3>
+            <p>
+              Try a different search or use Reset filters to see all projects.
+            </p>
+          </div>
+          <noscript
+            ><p>
+              All projects are shown below. Enable JavaScript to search and
+              filter them.
+            </p></noscript
+          >
+          <div class="project-grid" id="project-grid">
+            <article class="project-card" data-category="concept">
+              <img
+                src="assets/images/laundry-app.png"
+                alt="Illustration of washing machines and a laundry management app"
+                width="1672"
+                height="940"
+                loading="lazy"
+              />
+
+              <div class="project-content">
+                <p class="project-status">Course project</p>
+
+                <h3>Dormdry</h3>
+
+                <p>
+                  A mobile app prototype designed to improve shared laundry
+                  services in student housing.
+                </p>
+
+                <ul class="tags" aria-label="Project topics">
+                  <li>App Prototype</li>
+                  <li>Student Housing</li>
+                  <li>Laundry Management</li>
+                </ul>
+
+                <details>
+                  <summary>Project details</summary>
+
+                  <p>
+                    <strong>Purpose:</strong>
+                    Reduce waiting, forgotten laundry, and confusion about
+                    shared washing machines in student housing.
+                  </p>
+
+                  <p>
+                    <strong>Proposed features:</strong>
+                    Organize laundry queues, remind students to collect their
+                    clothes, and allow users to report faulty machines.
+                  </p>
+
+                  <p>
+                    <strong>Status:</strong>
+                    A prototype demonstrating the proposed app experience, not a
+                    fully implemented laundry management service.
+                  </p>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="concept">
+              <img
+                src="assets/images/building-alert.svg"
+                alt="Illustration of campus buildings with a maintenance alert"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+
+              <div class="project-content">
+                <p class="project-status">Project concept</p>
+                <h3>KFUPM Building Alert System</h3>
+                <p>
+                  A proposed website that helps campus users report building
+                  maintenance issues with photos and comments. Planned features
+                  include finding buildings and viewing reported problems.
+                </p>
+
+                <ul class="tags" aria-label="Project topics">
+                  <li>Campus services</li>
+                  <li>Web application</li>
+                  <li>Planning</li>
+                </ul>
+                <details>
+                  <summary>Project details</summary>
+                  <p>
+                    <strong>Problem:</strong> Campus maintenance issues need a
+                    clear way to be reported.
+                  </p>
+                  <p>
+                    <strong>Planned solution:</strong> Let users choose a
+                    building and describe an issue with a photo.
+                  </p>
+                  <p>
+                    <strong>Status:</strong> This is a concept, not an
+                    implemented reporting service.
+                  </p>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="website">
+              <img
+                src="assets/images/portfolio.svg"
+                alt="Illustration of a personal portfolio webpage"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+
+              <div class="project-content">
+                <p class="project-status">Portfolio assignment</p>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                  A responsive website introducing me and my work. It includes
+                  project cards, a light and dark theme toggle, and a contact
+                  form demonstration with browser validation. Assignment 2 adds
+                  live search, category filters, and saved browsing preferences.
+                </p>
+
+                <ul class="tags" aria-label="Project technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <details>
+                  <summary>Project details</summary>
+                  <p>
+                    <strong>Built with:</strong> Semantic HTML, responsive CSS,
+                    and plain JavaScript.
+                  </p>
+                  <p>
+                    <strong>Assignment 2:</strong> Search project text, filter
+                    by type, and restore your browsing preferences after
+                    reloading.
+                  </p>
+                  <p>
+                    <strong>Scope:</strong> A static portfolio; the contact form
+                    checks input locally and does not send messages.
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <p class="eyebrow">My toolkit</p>
+          <h2 id="skills-title">Skills I am developing</h2>
+          <p class="section-description">
+            Building a foundation through coursework and practice.
+          </p>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>HTML</h3>
+              <p>
+                Structuring pages with headings, semantic elements, links,
+                images, and forms.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>CSS</h3>
+              <p>
+                Styling interfaces using reusable classes, Flexbox, Grid, and
+                responsive layouts.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>JavaScript</h3>
+              <p>
+                Adding interactions through events, DOM updates, and browser
+                storage.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-alt"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2 id="contact-title">Contact</h2>
+            <p class="section-description" id="contact-note">
+              This is a demonstration form for my assignment. It validates your
+              entries but does not send or store your message.
+            </p>
+          </div>
+
+          <form id="contact-form" aria-describedby="contact-note">
+            <div class="form-field">
+              <label for="name">Name (required)</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                maxlength="80"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email (required)</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                maxlength="254"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message (required)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                minlength="10"
+                maxlength="2000"
+                required
+              ></textarea>
+            </div>
+
+            <!-- JavaScript enables the demo after attaching its handler. -->
+            <button class="button" id="contact-submit" type="submit" disabled>
+              Check message
+            </button>
+
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+
+            <noscript>
+              <p>
+                Enable JavaScript to use this demonstration form. Messages
+                cannot be sent through this website.
+              </p>
+            </noscript>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year">2026</span> Rakan.</p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
+        <a href="#about">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>

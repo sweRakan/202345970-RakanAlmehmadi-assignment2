@@ -1,0 +1,8 @@
+{
+  "name": "rakan-interactive-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional development tests; the portfolio itself has no dependencies.",
+  "scripts": { "test": "node tests/check.cjs" },
+  "devDependencies": { "jsdom": "30.1.3" }
+}

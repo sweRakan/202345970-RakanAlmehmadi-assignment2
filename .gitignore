@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Temporary and log files
+*.log
+*.tmp
+*.swp
+*~
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Optional dependency directories
+node_modules/
+node_modules/
