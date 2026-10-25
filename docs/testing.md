@@ -79,7 +79,7 @@ The HTML review was separate from my browser testing.
 
 Before Dormdry was added, ChatGPT/Codex checked the JavaScript
 syntax and ran 19 automated checks against the original
-two-project Assignment 2 implementation using jsdom.
+three-project Assignment 2 implementation using jsdom.
 
 All 19 checks passed at that stage.
 
@@ -110,11 +110,11 @@ The manual browser results above were reported by me.
 ## 6. Automated Test Limitation
 
 The supplied automated tests were originally written for
-two project cards. Adding Dormdry changes the expected total
-to three projects and the number of concept projects to two.
+three project cards. Adding Dormdry changes the expected total
+to three projects and the number of concept projects to three.
 
 The earlier automated results therefore apply only to the
-original two-project implementation.
+original three-project implementation.
 
 The automated tests have not been documented as updated and
 rerun for the final three-project version. My manual testing
@@ -136,5 +136,5 @@ expandable details, responsive layout, keyboard navigation,
 themes, saved preferences, and contact-form validation.
 
 The earlier 19 automated checks passed for the original
-two-project version. They are not presented as an automated
+three-project version. They are not presented as an automated
 retest of the updated website.

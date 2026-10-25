@@ -30,7 +30,6 @@ require a framework, backend, database, API key, or build step.
 | docs/technical-documentation.md  | Technical implementation details                                 |
 | docs/ai-usage-report.md          | AI assistance and student modifications                          |
 | docs/testing.md                  | Automated and manual testing records                             |
-| docs/submission-guide.md         | Review and submission instructions                               |
 | tests/check.cjs                  | Automated checks originally written for two projects             |
 | package.json                     | Optional development-test configuration                          |
 | .gitignore                       | Files and folders excluded from Git                              |

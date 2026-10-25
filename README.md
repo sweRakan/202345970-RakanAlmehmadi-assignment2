@@ -27,6 +27,7 @@ The existing light/dark preference and validated contact demo remain available. 
    ```
 
    On Windows, use `py -m http.server 8000` if `python` is unavailable.
+
 4. Visit `http://localhost:8000` in your browser.
 5. Stop the server with Ctrl+C.
 
@@ -36,40 +37,39 @@ Alternatively, open the folder in VS Code and use Live Server. No build, npm ins
 
 1. Go to Projects, type `campus`, and confirm only the campus concept remains.
 2. Select Websites while that search is present: the empty state explains how to recover.
-3. Choose Reset filters; both projects return and focus moves to Search.
+3. Choose Reset filters; all three projects return.
 4. Select Websites and reload: the selection is restored.
 5. Expand Project details and try the Dark mode toggle.
 6. In Contact, try missing fields, an invalid email, and a valid message of at least 10 non-padding characters. A valid entry produces a local confirmation only.
 
 ## Files
 
-| Path | Purpose |
-| --- | --- |
-| `index.html` | Content, semantic layout, accessible controls and form |
-| `css/styles.css` | Responsive layouts, themes and transitions |
-| `js/script.js` | Filtering, storage, theme and form behavior |
-| `assets/images/` | Two local SVG project illustrations |
-| `docs/technical-documentation.md` | Architecture, data, errors and maintenance |
-| `docs/ai-usage-report.md` | Transparent account of AI assistance and review status |
-| `docs/testing.md` | Verification results and manual test checklist |
-| `docs/submission-guide.md` | Remaining personal review and repository steps |
-| `tests/check.cjs`, `package.json` | Optional automated development checks |
+| Path                              | Purpose                                                |
+| --------------------------------- | ------------------------------------------------------ |
+| `index.html`                      | Content, semantic layout, accessible controls and form |
+| `css/styles.css`                  | Responsive layouts, themes and transitions             |
+| `js/script.js`                    | Filtering, storage, theme and form behavior            |
+| `assets/images/`                  | Two SVG illustrations and one PNG laundry illustration |
+| `docs/technical-documentation.md` | Architecture, data, errors and maintenance             |
+| `docs/ai-usage-report.md`         | Transparent account of AI assistance and review status |
+| `docs/testing.md`                 | Verification results and manual test checklist         |
+| `tests/check.cjs`, `package.json` | Optional automated development checks                  |
 
 ## Requirement mapping
 
-| Assignment requirement | Implementation |
-| --- | --- |
-| Continue Assignment 1 | Original content, images, layout, themes and form retained |
-| Dynamic content | Live search, category filter, count and expandable details |
-| Data handling | Saved filter/theme preferences and validated form |
-| Animation | Button color and card movement/border transitions |
-| Feedback | Empty results, live count, storage warnings and form validation |
-| AI enhancement | ChatGPT/Codex implementation and documentation assistance |
-| Documentation | This README and the documents in `docs/` |
+| Assignment requirement | Implementation                                                  |
+| ---------------------- | --------------------------------------------------------------- |
+| Continue Assignment 1  | Original content, images, layout, themes and form retained      |
+| Dynamic content        | Live search, category filter, count and expandable details      |
+| Data handling          | Saved filter/theme preferences and validated form               |
+| Animation              | Button color and card movement/border transitions               |
+| Feedback               | Empty results, live count, storage warnings and form validation |
+| AI enhancement         | ChatGPT/Codex implementation and documentation assistance       |
+| Documentation          | This README and the documents in `docs/`                        |
 
 ## AI assistance and authorship
 
-ChatGPT/Codex generated the Assignment 2 additions and documentation and performed the checks recorded in `docs/testing.md`. This is an AI-assisted implementation prepared for my review. Personal understanding, modifications and browser checks must be recorded honestly before submission; the detailed report does not claim I already performed them.
+ChatGPT/Codex helped generate the Assignment 2 features and documentation. I added the Dormdry project using an AI-assisted template and description, integrated its illustration, and manually tested the updated three-project portfolio. My modifications and reported manual test results are documented in docs/ai-usage-report.md and docs/testing.md. The earlier 19 automated checks apply only to the original two-project version.
 
 ## Origin and publication
 
